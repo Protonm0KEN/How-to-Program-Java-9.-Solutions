@@ -1,4 +1,4 @@
-//Write declarations, statements or comments that accomplish each of the following tasks:
+package Exercise2_5andExercise2_6;//Write declarations, statements or comments that accomplish each of the following tasks:
 
 import java.util.Scanner;
 

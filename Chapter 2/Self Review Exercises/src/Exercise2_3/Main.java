@@ -1,3 +1,4 @@
+package Exercise2_3;
 import java.util.Scanner;
 
 //class declaration statement
