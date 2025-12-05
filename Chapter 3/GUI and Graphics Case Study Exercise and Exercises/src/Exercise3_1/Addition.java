@@ -37,7 +37,7 @@ public class Addition {//Access modifier: public. Class declaration. Beginning o
         //initializing it to value that was returnt from input dialog and converted by parseInt.
 
 
-        number2 = Integer.parseInt(JOptionPane.showInputDialog("Enter first integer: "));
+        number2 = Integer.parseInt(JOptionPane.showInputDialog("Enter second integer: "));
 
         //Showing the message dialog that is centered in it's own window ( due to the parentComponent: null ) and showMessageDialog method is static, thus no object is needed to call it
         JOptionPane.showMessageDialog(null, "The sum is: "+(number1+number2));
