@@ -47,7 +47,7 @@ public class Board {
         }
         /*
          * Since even in the template we have max elimination number as 30, so if it is not occupied and tie occurred then we will return the first one
-         * TODO: The heurisitic approach should be applied here too, to lookup to next cell after having a tie, choosing recursively the best one
+         * TODO: The heuristic approach should be applied here too, to lookup to next cell after having a tie, choosing recursively the best one
         */
         return bestEliminationNumber != EliminationNumberOfFilledCell ? bestEliminationNumber : 100000;
     }
@@ -272,9 +272,9 @@ public class Board {
     //Solve exhaustively
     public boolean solveExhaustive(int row, int numberOfTries){
         /*
-        * After placing first queen, we will take first squre that is appropriate for a queen to be placed to,
-        * If it is approriate we place the queen, and then go to next queen and so on
-        * If the numebr of queens set is not 8 ( board is not solved), we return to the second queen ( first will always be placed on the upper left corner), and place it to next most available cell
+        * After placing first queen, we will take first square that is appropriate for a queen to be placed to,
+        * If it is appropriate we place the queen, and then go to next queen and so on
+        * If the number of queens set is not 8 ( board is not solved), we return to the second queen ( first will always be placed in the upper left corner), and place it to next most available cell
         * And try again, if again not solved by the end, put to next cell and so on, and thus we try all combinations and go to the end
         *
         * */
