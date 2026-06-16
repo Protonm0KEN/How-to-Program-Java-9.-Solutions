@@ -1,4 +1,4 @@
-package Exercise8_8;
+package Exercise10_11;
 
 // Fig. 8.7: Date.java
 // Date class declaration.
@@ -13,13 +13,13 @@ public class Date
             { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
     // constructor: call checkMonth to confirm proper value for month;
-// call checkDay to confirm proper value for day
-    public Date( int theMonth, int theDay, int theYear ) {
+    // call checkDay to confirm proper value for day
+    public Date(int theMonth, int theDay, int theYear ) {
         month = checkMonth( theMonth ); // validate month
         year = checkYear(theYear); // could validate year
         day = checkDay( theDay ); // validate day
-
-        System.out.printf("Date object constructor for date %s\n", this );
+//
+//        System.out.printf("Date object constructor for date %s\n", this );
     } // end Date constructor
 
     // utility method to confirm proper month value
@@ -83,5 +83,15 @@ public class Date
     } // end method toString
     public String getDateString(){
         return this.toString();
+    }
+
+    public int getDay(){
+        return this.day;
+    }
+    public int getMonth(){
+        return this.month;
+    }
+    public int getYear(){
+        return this.year;
     }
 } // end class Date
