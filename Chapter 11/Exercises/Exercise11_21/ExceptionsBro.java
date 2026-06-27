@@ -1,8 +1,5 @@
 package Exercise11_21;
 
-
-
-
 public class ExceptionsBro {
     public static void main( String[] args ){
         try{
